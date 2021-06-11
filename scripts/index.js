@@ -44,8 +44,9 @@ function calculatePlan(cardNode, transactionAmt, noOfMonths, monthlyPlanFeeRate)
 function onRowSelect(checkBoxNode) {
   let planSelectorNode = document.getElementsByClassName("plan-selector")[0];
   let transactionAmtNode = checkBoxNode.parentNode.parentNode.getElementsByClassName("table__cell_data_transaction-amt")[0];
-  let transactionAmt = parseFloat(transactionAmtNode.innerText);
+  let transactionAmt = parseFloat(transactionAmtNode.innerText.substring(1));
   if (checkBoxNode.checked == true && transactionAmt > 100){
+    console.log("True");
     planSelectorNode.classList.add("plan-selector_visible");
     let monthlyPlanFeeRate6 = 0.5/100;
     let monthlyPlanFeeRate12 = 0.7/100;
@@ -59,7 +60,9 @@ function onRowSelect(checkBoxNode) {
     calculatePlan(card12MonthNode, transactionAmt, 12, monthlyPlanFeeRate12);
     calculatePlan(card24MonthNode, transactionAmt, 24, monthlyPlanFeeRate24);
   }
+
   if (checkBoxNode.checked != true || transactionAmt <= 100){
+    console.log("False");
     planSelectorNode.classList.remove("plan-selector_visible");
   }
 }
