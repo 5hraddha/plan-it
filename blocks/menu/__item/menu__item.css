@@ -1,0 +1,9 @@
+.menu__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu__item + .menu__item {
+  margin-left: 40px;
+}

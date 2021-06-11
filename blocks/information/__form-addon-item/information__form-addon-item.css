@@ -1,0 +1,10 @@
+.information__form-addon-item {
+  margin: 0;
+  padding: 0.5em 0.75em;
+  border-radius: 6px 0 0 6px;
+  background-color: #ff6000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}

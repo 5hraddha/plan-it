@@ -1,0 +1,10 @@
+.table__column-heading {
+  margin: 0;
+  padding: 8px 15px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  /* border: 1px solid blue; */
+}

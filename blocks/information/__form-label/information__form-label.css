@@ -1,0 +1,10 @@
+.information__form-label {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: capitalize;
+}

@@ -1,0 +1,8 @@
+.header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 62px;
+  background-color: #f8f8f8;
+}

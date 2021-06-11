@@ -1,0 +1,7 @@
+.information__amt-available {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 30%;
+}

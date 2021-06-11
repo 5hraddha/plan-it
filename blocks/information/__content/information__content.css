@@ -1,0 +1,11 @@
+.information__content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 80%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+.cards {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

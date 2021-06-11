@@ -1,0 +1,11 @@
+.card__call-to-action {
+  margin: 10px 0;
+  padding: 8px 20px;
+  width: 100%;
+  max-width: 80%;
+  background-color: #ff6000;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}

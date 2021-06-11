@@ -1,0 +1,11 @@
+.instructions__content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 80%;
+  min-height: 100px;
+  background-color: #ff6000;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}

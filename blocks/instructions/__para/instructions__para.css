@@ -1,0 +1,9 @@
+.instructions__para {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 60%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}

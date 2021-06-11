@@ -1,0 +1,33 @@
+.information__form-input {
+  margin: 0;
+  padding: 0.5em 0.75em;
+  flex: 1;
+  border: 1px solid rgba(147, 128, 108, 0.25);
+  border-radius: 0 6px 6px 0;
+  transition: all 0.5s ease-out;
+}
+
+.information__form-input:hover {
+  outline: 0;
+  border-color: #ff6000;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.information__form-input:focus {
+  outline: 0;
+  border-color: #ff6000;
+  border-width: 1px;
+  border-style: solid;
+  background: #fff4ed;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

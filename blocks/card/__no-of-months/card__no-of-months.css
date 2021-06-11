@@ -1,0 +1,50 @@
+.card__no-of-months {
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #293033;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 50%;
+}
+
+.card__no-of-months::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff6000 #ff6000 #ff6000 transparent;
+  border-radius: 50%;
+  transition: transform 2s linear;
+}
+
+.card__no-of-months::after {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff6000 transparent #ff6000 #ff6000;
+  border-radius: 50%;
+  transition: transform 2s linear;
+}
+
+.card:hover .card__no-of-months::before {
+  transform: rotate(380deg);
+}
+
+.card:hover .card__no-of-months::after {
+  transform: rotate(-380deg);
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A Plan-It page">
+  <meta name="keywords" content="discover, planit">
+  <meta name="author" content="Stephen">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Discover - PlanIt</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__content">
+        <img class="logo" src="images/Discover_Card_logo.svg" alt="Discover Logo">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Create a Plan</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">View Your Plans</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Learn More</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Calculator</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="instructions">
+        <div class="instructions__content">
+          <p class="instructions__para">
+            Set up a plan for a portion of your balance with a fixed monthly fee and no interest. Enter an amount, then choose the plan that's best for you.
+          </p>
+        </div>
+      </section>
+      <section class="transactions">
+        <h2 class="transactions__title">Your recent transactions</h2>
+        <ul class="table">
+          <li class="table__row table__row_type_header">
+            <h3 class="table__column-heading">Select Transaction to Plan</h2>
+            <h3 class="table__column-heading">Credit Card</h2>
+            <h3 class="table__column-heading">Transaction Date</h2>
+            <h3 class="table__column-heading">Merchant Name</h2>
+            <h3 class="table__column-heading">Transaction Amount</h2>
+          </li>
+          <li class="table__row">
+            <p class="table__cell"><input type="checkbox" class="table__checkbox" id="row-1" name="select-row" value="1"></p>
+            <p class="table__cell">60111234456789100</p>
+            <p class="table__cell">MM/DD/YY</p>
+            <p class="table__cell">Walmart</p>
+            <p class="table__cell table__cell_data_transaction-amt">$130.00</p>
+          </li>
+          <li class="table__row">
+            <p class="table__cell"><input type="checkbox" class="table__checkbox" id="row-2" name="select-row" value="2"></p>
+            <p class="table__cell">60111234456789100</p>
+            <p class="table__cell">MM/DD/YY</p>
+            <p class="table__cell">Costco</p>
+            <p class="table__cell table__cell_data_transaction-amt">$170.00</p>
+          </li>
+          <li class="table__row">
+            <p class="table__cell"><input type="checkbox" class="table__checkbox" id="row-3" name="select-row" value="3"></p>
+            <p class="table__cell">60111234456789100</p>
+            <p class="table__cell">MM/DD/YY</p>
+            <p class="table__cell">Amazon</p>
+            <p class="table__cell table__cell_data_transaction-amt">$560.00</p>
+          </li>
+          <li class="table__row">
+            <p class="table__cell"><input type="checkbox" class="table__checkbox" id="row-4" name="select-row" value="1"></p>
+            <p class="table__cell">60111234456789100</p>
+            <p class="table__cell">MM/DD/YY</p>
+            <p class="table__cell">BestBuy</p>
+            <p class="table__cell table__cell_data_transaction-amt">$82.00</p>
+          </li>
+          <li class="table__row">
+            <p class="table__cell"><input type="checkbox" class="table__checkbox" id="row-4" name="select-row" value="1"></p>
+            <p class="table__cell">60111234456789100</p>
+            <p class="table__cell">MM/DD/YY</p>
+            <p class="table__cell">BedBathBeyond</p>
+            <p class="table__cell table__cell_data_transaction-amt">$75.05</p>
+          </li>
+        </ul>
+      </section>
+      <section class="information">
+        <div class="information__content">
+          <div class="information__stmt-balance">
+            <h2 class="information__heading">Statement Balance</h2>
+            <p class="information__text" id="stmt-bal">$123.56</p>
+          </div>
+          <div class="information__amt-available">
+            <h2 class="information__heading">Amount Available to Plan</h2>
+            <p class="information__text" id="amt-avail-to-plan">$100.56</p>
+          </div>
+          <div class="information__form">
+            <label class="information__form-label">
+              Plan amount
+              <div class="information__form-addon">
+                <span class="information__form-addon-item">$</span>
+                <input type="number" class="information__form-input" value="0">
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="plan-selector">
+        <ul class="cards">
+          <li class="card" id="card-mon-6">
+            <div class="card__header">
+              <p class="card__no-of-months">6</p>
+              <p class="card__subtitle">monthly payments of</p>
+              <p class="card__monthly-payment" id="monthly-payment">$20.00</p>
+            </div>
+            <button class="card__call-to-action">Select Plan</button>
+            <div class="card__details">
+              <p class="card__details-para">Includes a monthly plan fee of <span class="card__details-amnt" id="monthly-plan-fee">$20.89</span> for a total plan fee of <span class="card__details-amnt" id="total-plan-fee">$100.24</span></p>
+            </div>
+            <div class="card__summary">
+              <p class="card__summary-title">Total Cost</p>
+              <p class="card__summary-value" id="total-cost">$245.00</p>
+            </div>
+          </li>
+          <li class="card" id="card-mon-12">
+            <div class="card__header">
+              <p class="card__no-of-months">12</p>
+              <p class="card__subtitle">monthly payments of</p>
+              <p class="card__monthly-payment" id="monthly-payment">$20.00</p>
+            </div>
+            <button class="card__call-to-action">Select Plan</button>
+            <div class="card__details">
+              <p class="card__details-para">Includes a monthly plan fee of <span class="card__details-amnt" id="monthly-plan-fee">$20.89</span> for a total plan fee of <span class="card__details-amnt" id="total-plan-fee">$100.24</span></p>
+            </div>
+            <div class="card__summary">
+              <p class="card__summary-title">Total Cost</p>
+              <p class="card__summary-value" id="total-cost">$245.00</p>
+            </div>
+          </li>
+          <li class="card" id="card-mon-24">
+            <div class="card__header">
+              <p class="card__no-of-months">24</p>
+              <p class="card__subtitle">monthly payments of</p>
+              <p class="card__monthly-payment" id="monthly-payment">$20.00</p>
+            </div>
+            <button class="card__call-to-action">Select Plan</button>
+            <div class="card__details">
+              <p class="card__details-para">Includes a monthly plan fee of <span class="card__details-amnt" id="monthly-plan-fee">$20.89</span> for a total plan fee of <span class="card__details-amnt" id="total-plan-fee">$100.24</span></p>
+            </div>
+            <div class="card__summary">
+              <p class="card__summary-title">Total Cost</p>
+              <p class="card__summary-value" id="total-cost">$245.00</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
